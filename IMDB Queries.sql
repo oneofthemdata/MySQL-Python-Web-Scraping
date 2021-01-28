@@ -44,11 +44,6 @@ GROUP BY ID
 ORDER BY Gross_Total DESC
 LIMIT 10;
 
-SELECT * FROM imdbtop250.movies
-WHERE Year = (SELECT MIN(Year) FROM movies)
-	AND 
-	  Year <= (SELECT Year FROM movies WHERE Year <= '1950');
-
 -- 7. Find the movies made from 1950 and 1960. What's their gross total, number of reviews, and ratings?
 
 SELECT Movie, Year, Gross_Total, Total_Rate, Rating
