@@ -26,7 +26,7 @@ After scraping the data, it needed to clean up so that it was usable for our mod
  
   - Some values in Year column scrapped as string values so converted to integer.
   - Run Time values scrapped as 'xxx min' so dropped the 'min' then converted to integer.
-  - Actors and Genre column values scraped as one raw string so values splitted.
+  - Actors and Genre column values scraped as one raw string so values split.
   - Gross column also stored as string and some string values like 'mil' so dropped the string values<br>
     then converted to integer.
     
